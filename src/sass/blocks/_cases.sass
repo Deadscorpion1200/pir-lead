@@ -1,0 +1,229 @@
+.cases
+	padding-top: 150rem
+	padding-bottom: 200rem
+	@media only screen and (max-width: 650px)
+		padding-top: 70rem
+		padding-bottom: 70rem
+.cases__title
+	font-size: 60rem
+	font-family: "Montserrat",sans-serif
+	font-weight: 900
+	text-align: center
+	text-transform: uppercase
+	position: relative
+	margin-bottom: 100rem
+	@media only screen and (max-width: 650px)
+		font-size: 27rem
+	& span
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			width: 2rem
+			height: 100rem
+			top: -150rem
+			left: 120rem
+			background: $dark_bg
+			@media only screen and (max-width: 650px)
+				top: -70rem
+				height: 50rem
+				left: 50%
+		&:after
+			content: ''
+			position: absolute
+			width: 493rem
+			height: 493rem
+			bottom: -140rem
+			left: -205rem
+			border-radius: 50%
+			background: linear-gradient(180deg, rgba(38, 177, 160, 0.2) 0%, rgba(47, 212, 199, 0.2) 100%)
+			filter: blur(200rem)
+.cases__list
+	list-style: none
+	margin-top: 0
+	margin-bottom: 0
+	padding-left: 0
+.cases__item
+	display: flex
+	flex-direction: column
+.cases__block
+	width: 740rem
+	@media only screen and (max-width: 650px)
+		width: 100%
+.case__title
+	display: block
+	width: 740rem
+	font-size: 50rem
+	line-height: 55rem
+	font-family: "Montserrat", sans-serif
+	font-weight: 600
+	margin-right: auto
+	margin-bottom: 70rem
+	@media only screen and (max-width: 650px)
+		width: 100%
+		font-size: 18rem
+		line-height: 110%
+		margin-bottom: 20rem
+.case
+	& .case__block
+		&:nth-child(2)
+			display: none
+.case:nth-child(2n)
+	& .case__title
+		margin-right: 0
+		margin-left: auto
+	& .case-wrap
+		flex-direction: row-reverse
+	& .case-solution
+		padding-left: 0
+		padding-right: 40rem
+	& .case__more
+		flex-direction: row-reverse
+.case-wrap
+	display: flex
+	justify-content: space-between
+	@media only screen and (max-width: 650px)
+		width: 100%
+		& .case__block
+			width: 100%
+		& .case__tags
+			margin-bottom: 0
+		& .case__more
+			display: none
+.case__img
+	margin-bottom: 30rem
+.case__tags
+	display: flex
+	margin-bottom: 50rem
+	flex-wrap: wrap
+	& span
+		margin-right: 35rem
+		@media only screen and (max-width: 650px)
+			margin-right: 20rem
+.case__logo
+	& img
+		width: auto
+.case__more
+	display: flex
+	justify-content: space-between
+	align-items: center
+.case__button
+	display: flex
+	align-items: center
+	justify-content: space-between
+	padding: 15rem 30rem
+	width: 312rem
+	height: 59rem
+	font-size: 22rem
+	font-family: "PTRootUI"
+	font-weight: 500
+	background: #fff
+	transition: all .25s
+	border: 2rem solid $dark_bg
+	cursor: pointer
+	& svg line
+		transition: stroke .25s
+	&:hover
+		background: $mint
+		color: #fff
+		border-color: $mint
+		& svg line
+			stroke: #fff
+.case-solution
+	list-style: none
+	padding-left: none
+	margin-top: 0
+	margin-bottom: 0
+.case-solution__list
+	list-style: none
+	padding-left: 0
+.case-result
+	list-style: none
+	padding-left: 0
+.case-result__list
+	list-style: none
+	padding-left: 0
+	display: flex
+.case-solution__title
+	font-size: 33rem
+	font-weight: 900
+	font-family: "Montserrat"
+	text-transform: uppercase
+	margin-bottom: 30rem
+	& span
+		display: inline-block
+		margin-right: 50rem
+.case-solution__item
+	margin-bottom: 70rem
+	& p
+		padding-left: 90rem
+		width: 740rem
+		position: relative
+	&:last-child
+		margin-bottom: 20rem
+.case-solution__description
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		width: 1rem
+		height: 100%
+		background: $dark_bg
+		left: 20rem
+.case-solution__list
+	position: relative
+	padding-left: 90rem
+	&:before
+		content: ''
+		position: absolute
+		width: 1rem
+		height: 100%
+		background: $dark_bg
+		left: 20rem
+.case-solution__point
+	padding-left: 20rem
+	position: relative
+	max-width: 500rem
+	line-height: 130%
+	font-size: 20rem
+	margin-bottom: 10rem
+	&:before
+		content: ''
+		width: 5rem
+		height: 5rem
+		background: $dark_bg
+		position: absolute
+		left: 0rem
+		top: 10rem
+.case-result__list
+	padding-left: 90rem
+.case-result__title
+	font-size: 27rem
+	font-family: "Montserrat", sans-serif
+	font-weight: 700
+	margin-bottom: 9rem
+.case-result__item
+	&:first-child
+		width: 120rem
+		margin-right: 40rem
+	&:nth-child(2)
+		width: 190rem
+		margin-right: 40rem
+.case-result__deskr
+	font-size: 20rem
+	line-height: 24rem
+.case
+	margin-bottom: 200rem
+	@media only screen and (max-width: 650px)
+		margin-bottom: 60rem
+.case__add
+	margin-left: auto
+	margin-right: auto
+	width: 233rem
+	@media only screen and (max-width: 650px)
+		margin-left: 0
+		width: 178rem
+		padding: 10rem 25rem
+		font-size: 16rem
+		& svg
+			width: 37.5rem

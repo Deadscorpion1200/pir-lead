@@ -1,0 +1,81 @@
+.works
+	padding-top: 200rem
+	padding-bottom: 100rem
+	position: relative
+	background: $dark_bg
+	color: #fff
+	overflow: hidden
+	&:before
+		top: -179rem
+		left: 527rem
+		border-radius: 50%
+		content: ''
+		position: absolute
+		width: 495rem
+		height: 495rem
+		background: linear-gradient(180deg, rgba(38, 177, 160, 0.6) 0%, rgba(47, 212, 199, 0.6) 100%)
+		filter: blur(200rem)
+	@media only screen and (max-width: 650px)
+		padding-top: 70rem
+		padding-bottom: 70rem
+.works__title
+	text-align: center
+	font-size: 60rem
+	font-family: "Montserrat", sans-serif
+	font-weight: 600
+	text-transform: uppercase
+	margin-bottom: 102rem
+.works-item__list
+	width: 402rem
+.works__list
+	display: flex
+	flex-wrap: wrap
+	list-style: none
+	padding-left: 0
+.works-item
+	display: flex
+	margin-bottom: 100rem
+	@media only screen and (max-width: 650px)
+		margin-bottom: 40rem
+.works-item__icon
+	width: 61rem
+	margin-right: 14rem
+	@media only screen and (max-width: 650px)
+		width: 30rem
+	& svg
+		width: 100%
+		@media only screen and (max-width: 650px)
+			height: 26rem
+.works-item__description
+	text-transform: uppercase
+	font-size: 27rem
+	font-weight: 800
+	@media only screen and (max-width: 650px)
+		font-size: 18rem
+.works-item__list
+	list-style: none
+	padding-left: 0
+	margin-top: 15rem
+	@media only screen and (max-width: 650px)
+		width: 100%
+		margin-top: 10rem
+.works-item__item
+	text-transform: none
+	padding-left: 19rem
+	position: relative
+	max-width: 403rem
+	font-size: 20rem
+	line-height: 26rem
+	font-weight: 400
+	&:before
+		content: ''
+		width: 4rem
+		height: 4rem
+		border-radius: 50%
+		position: absolute
+		top: 10rem
+		background: #fff
+		left: 0
+	@media only screen and (max-width: 650px)
+		font-size: 15rem
+		line-height: 1.3

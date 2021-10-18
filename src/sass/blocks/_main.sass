@@ -1,0 +1,86 @@
+.main
+	background: $dark_bg url('../img/main_bg.png') center no-repeat
+	height: 100vh
+	position: relative
+	padding-top: 250rem
+	z-index: -1
+	@media only screen and (max-width: 650px)
+		height: 600rem
+		padding-top: 131rem
+.main__text
+	width: 555rem
+.main__title
+	font-size: 75rem
+	font-family: "Montserrat", sans-serif
+	font-weight: 900
+	color: #fff
+	text-transform: uppercase
+	margin-bottom: 50rem
+	@media only screen and (max-width: 650px)
+		font-size: 33rem
+	& span
+		display: block
+		margin-top: 25rem
+		@media only screen and (max-width: 650px)
+			margin-top: 10rem
+		&:first-child
+			margin-left: 137rem
+			@media only screen and (max-width: 650px)
+				margin-left: 57rem
+.main__subtitle
+	color: #fff
+	font-family: "PTRootUi"
+	font-weight: 400
+	font-size: 32rem
+	line-height: 1.3
+	margin-bottom: 102rem
+	@media only screen and (max-width: 650px)
+		font-size: 18rem
+		line-height: 1.25
+		margin-bottom: 29.5rem
+.main__button
+	color: #fff
+	background: transparent
+	border: none
+	width: 264rem
+	display: flex
+	align-items: center
+	justify-content: space-between
+	font-family: "PTRootUi"
+	font-weight: 500
+	font-size: 25rem
+	cursor: pointer
+	transition: color .25s
+	& svg
+		width: 48rem
+		height: 8rem
+	&:hover
+		color: $mint
+	@media only screen and (max-width: 650px)
+		margin-bottom: 60rem
+		font-size: 16rem
+		width: 171rem
+.main__media
+	position: absolute
+	bottom: 0
+	right: 0
+	width: 1070rem
+	height: 653rem
+	@media only screen and (max-width: 650px)
+		width: 100%
+		position: relative
+		height: auto
+.main__header
+	position: absolute
+	top: -96rem
+	right: 0
+	&:before
+		content: ''
+		width: 130rem
+		height: 2rem
+		background: #fff
+		position: absolute
+		bottom: -20rem
+		left: -108rem
+	@media only screen and (max-width: 650px)
+		display: none

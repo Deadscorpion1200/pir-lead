@@ -1,0 +1,93 @@
+.footer
+	background: $dark_bg
+	padding-top: 60rem
+	padding-bottom: 60rem
+.footer__logo
+	width: 166rem
+	height: 55rem
+.footer__wrapper
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-bottom: 46rem
+.footer__socials
+	display: flex
+	padding-left: 0
+	list-style: none
+.footer__social
+	&:first-child
+		margin-right: 25rem
+		& svg
+			width: 25rem
+			height: 25rem
+			fill: #fff
+			transition: fill .25s
+		&:hover
+			& svg
+				fill: $mint
+	&:nth-child(2)
+		margin-right: 25rem
+		& svg
+			width: 27rem
+			height: 25rem
+			fill: #fff
+			transition: fill .25s
+		&:hover
+			& svg
+				fill: $mint
+	&:nth-child(3)
+		margin-right: 25rem
+		& svg
+			width: 15rem
+			height: 25rem
+			stroke: #fff
+			transition: stroke .25s
+		&:hover
+			& svg
+				stroke: $mint
+	&:nth-child(4)
+		& svg
+			width: 26rem
+			height: 25rem
+			fill: #fff
+			transition: fill .25s
+		&:hover
+			& svg
+				fill: $mint
+.footer__info
+	display: flex
+	color: #fff
+.footer__copyright
+	margin-right: 80rem
+.footer__contacts
+	display: flex
+	flex-direction: column
+.footer__line
+	&:nth-child(2)
+		.footer__wrapper
+			align-items: flex-end
+.footer__contacts
+	color: #fff
+	text-align: right
+.footer__link
+	margin-bottom: 10rem
+	transition: color .25s
+	&:last-child
+		margin-bottom: 0
+	&:hover
+		color: $mint
+.footer__policy
+	position: relative
+	transition: color .25s
+	&::before
+		content: ''
+		position: absolute
+		width: 100%
+		bottom: 0
+		background: #fff
+		height: 1rem
+		transition: width .25s
+	&:hover
+		color: $mint
+		&:before
+			width: 0

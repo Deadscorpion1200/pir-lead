@@ -1,0 +1,151 @@
+.contactus
+	padding-top: 350rem
+	padding-bottom: 200rem
+.contactus-page
+	padding-top: 200rem
+.contactus__title
+	font-size: 60rem
+	font-family: "Montserrat",sans-serif
+	font-weight: 900
+	text-align: center
+	text-transform: uppercase
+	position: relative
+	margin-bottom: 100rem
+	& span
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			width: 2rem
+			height: 100rem
+			top: -150rem
+			left: 50%
+			background: $dark_bg
+		&:after
+			content: ''
+			position: absolute
+			width: 493rem
+			height: 493rem
+			bottom: -206rem
+			left: 155rem
+			border-radius: 50%
+			background: linear-gradient(180deg, rgba(38, 177, 160, 0.2) 0%, rgba(47, 212, 199, 0.2) 100%)
+			filter: blur(200rem)
+.contactus__wrapper
+	display: flex
+	justify-content: space-between
+.contactus-form
+	position: relative
+	&:before
+		content: ''
+		position: absolute
+		width: 741rem
+		height: 741rem
+		border-radius: 50%
+		top: -44rem
+		left: -42rem
+		background: linear-gradient(180deg, rgba(38, 177, 160, 0.2) 0%, rgba(47, 212, 199, 0.2) 100%)
+		filter: blur(200rem)
+.contactus-form__title
+	font-weight: 900
+	font-size: 27rem
+	margin-bottom: 80rem
+	font-family: "Montserrat", sans-serif
+	text-transform: uppercase
+.contactus-contacts
+	width: 490rem
+	font-size: 27rem
+	font-weight: 600
+	position: relative
+	&:before
+		content: '&'
+		position: absolute
+		font-size: 90rem
+		font-weight: 400
+		top: 0
+		line-height: 0.8
+		left: -133rem
+.contactus__form
+	width: 738rem
+	position: relative
+
+.contactus__line
+	display: flex
+	margin-bottom: 70rem
+	justify-content: space-between
+	align-items: center
+	&:nth-child(4)
+		margin-bottom: 20rem
+.contactus__input
+	border: none
+	border-bottom: 1rem solid $dark_bg
+	position: relative
+	padding-bottom: 10rem
+	color: $dark_bg
+	background: transparent
+	&:focus
+		transition: border-bottom .25s
+		border-bottom: 2rem solid $mint
+.contactus__button
+	width: 308rem
+	height: 59rem
+	font-size: 22rem
+	font-family: 'PTRootUI'
+	font-weight: 500
+	display: flex
+	justify-content: space-between
+	padding: 15rem 30rem
+	align-items: center
+	background: transparent
+	border: 2rem solid $dark_bg
+	transition: all .25s
+	cursor: pointer
+	& svg
+		width: 40rem
+	&:hover
+		border: 2rem solid $mint
+		background: $mint
+		color: #fff
+		& svg line
+			stroke: #fff
+.contactusFile
+	display: flex
+	align-items: center
+	& img
+		width: 26rem
+.contactus__file
+	display: none
+.contactusFile__name
+	font-family: "PTRootUI"
+	color: #161616
+	margin-left: 7rem
+.contactus__refference
+	width: 488rem
+	color: #9A9A9A
+.contactus-info
+	margin-top: 80rem
+.contactus-info__list
+	padding-left: 0
+	list-style: none
+	font-family: "PTRootUI"
+	font-weight: 400
+.contactus-info__item
+	margin-bottom: 10rem
+	&:last-child
+		margin-bottom: 0
+	& a
+		transition: color .25s
+		&:hover
+			color: $mint
+
+.link
+	& a
+		position: relative
+		&::before
+			content: ''
+			width: 100%
+			position: absolute
+			bottom: 0
+			left: 0
+			height: 2rem
+			background: $dark_bg

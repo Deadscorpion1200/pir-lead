@@ -1,0 +1,49 @@
+.command
+	padding-top: 220rem
+.command__title
+	font-size: 60rem
+	font-family: "Montserrat", sans-serif
+	text-transform: uppercase
+	font-weight: 900
+	text-align: center
+	margin-bottom: 100rem
+	&:before
+		content: ''
+		width: 2rem
+		height: 100rem
+		position: absolute
+		background: $dark_bg
+		left: 50%
+		top: -150rem
+	& span
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			width: 493rem
+			left: -5rem
+			top: -241rem
+			height: 493rem
+			border-radius: 50%
+			filter: blur(200rem)
+			background: linear-gradient(180deg, rgba(38, 177, 160, 0.2) 0%, rgba(47, 212, 199, 0.2) 100%)
+.command__wrapper
+	display: flex
+	flex-wrap: wrap
+.command__tile
+	width: 350rem
+	margin-right: 40rem
+	margin-bottom: 40rem
+	&:nth-child(4n)
+		margin-right: 0
+.command__description
+	margin-top: 30rem
+.command__name
+	font-weight: 700
+	font-family: "Montserrat", sans-serif
+	font-size: 22rem
+	margin-bottom: 5rem
+.command__position
+	font-size: 20rem
+	line-height: 25.2rem
+	font-family: "PTRootUI", sans-serif

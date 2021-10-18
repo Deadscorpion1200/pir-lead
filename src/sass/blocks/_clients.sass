@@ -1,0 +1,90 @@
+.clients
+	padding-top: 150rem
+	padding-bottom: 200rem
+	@media only screen and (max-width: 650px)
+		padding-top: 70rem
+		padding-bottom: 70rem
+	& img
+		width: 100%
+.clients-page
+	padding-top: 346rem
+	& .clients__title span:before
+		left: 50%
+.clients__title
+	font-size: 60rem
+	font-family: "Montserrat",sans-serif
+	font-weight: 900
+	text-align: center
+	text-transform: uppercase
+	position: relative
+	margin-bottom: 100rem
+	@media only screen and (max-width: 650px)
+		font-size: 27rem
+		margin-bottom: 40rem
+	& span
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			width: 2rem
+			height: 100rem
+			top: -150rem
+			left: 50%
+			background: $dark_bg
+			@media only screen and (max-width: 650px)
+				top: -75rem
+				height: 50rem
+.clients-wrap
+	display: flex
+	justify-content: flex-start
+	flex-wrap: wrap
+	margin-bottom: 40rem
+.clients__block
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 272rem
+	height: 180rem
+	margin-right: 40rem
+	margin-bottom: 40rem
+	@media only screen and (max-width: 650px)
+		width: 84rem
+		height: 55rem
+		margin-right: 14rem
+		&:nth-child(3n+3)
+			margin-right: 0
+		&:nth-child(5n+5)
+			margin-right: 14rem !important
+	&:nth-child(5n+5)
+		margin-right: 0
+.clients__button
+	background: #fff
+	border: 1rem solid $dark_bg
+	font-family: "PTRootUI"
+	font-weight: 500
+	font-size: 22rem
+	padding: 15rem 30rem
+	width: 257rem
+	height: 59rem
+	display: flex
+	justify-content: space-between
+	align-items: center
+	margin-left: auto
+	margin-right: auto
+	cursor: pointer
+	transition: all .25s
+	& svg line
+		transition: stroke .25s
+	&:hover
+		background: $mint
+		border-color: $mint
+		color: #fff
+		& svg line
+			stroke: #fff
+	@media only screen and (max-width: 650px)
+		width: 196rem
+		font-size: 16rem
+		height: auto
+		padding: 10rem 25rem
+		& svg
+			width: 37rem
