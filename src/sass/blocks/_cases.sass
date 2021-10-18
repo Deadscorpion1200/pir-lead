@@ -65,9 +65,10 @@
 		line-height: 110%
 		margin-bottom: 20rem
 .case
-	& .case__block
-		&:nth-child(2)
-			display: none
+	@media only screen and (max-width: 650px)
+		& .case__block
+			&:nth-child(2)
+				display: none
 .case:nth-child(2n)
 	& .case__title
 		margin-right: 0
