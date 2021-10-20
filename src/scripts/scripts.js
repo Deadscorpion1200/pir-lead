@@ -98,6 +98,29 @@ if(document.querySelector('.case-main-slider-two')){
 		wrapAround: true,
 		pageDots: false
 	});
+	$('.case-slider-two__arrow--prev').on('click',()=>{
+		flick1.previous();		
+	});
+	$('.case-slider-two__arrow--next').on('click',()=>{
+		flick1.next();		
+	});
+	var progressBar = document.querySelector('.case-slider-two-progress-bar')
+	
+	flick1.on( 'scroll', function( progress ) {
+		progress = Math.max( 0, Math.min( 1, progress ) );
+		progressBar.style.width = progress * 100 + '%';
+	});
+	let current = document.querySelector('.case-slider__progress__current');
+	let total = document.querySelector('.case-slider__progress__total')
+	function updateStatus(){
+		let slideNumber = flick1.selectedIndex + 1;
+		current.textContent = '0' + slideNumber;
+		total.textContent = '0' + flick1.slides.length
+	}
+	updateStatus();
+	flick1.on('select',updateStatus)
+	total.textContent('.case-slider__progressTotal')
+
 }
 if(document.querySelector('.contactus__file')){
 	let fileInput = document.querySelector('#contactusFile');

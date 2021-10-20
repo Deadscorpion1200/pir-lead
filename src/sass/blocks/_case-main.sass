@@ -154,13 +154,60 @@
 		width: 48rem
 		& line
 			transition: stroke .25s
+.case-slider-two-wrapper
+	position: relative
 .case-slider-two
 	width: 100%
+	padding-top: 55rem
+	padding-bottom: 30rem
+	.is-selected
+		transition: transform .25s
+		transform: scale(1) !important
+	& .flickity-button
+		display: none
+	& .progress-bar
+		height: 20px
+		width: 0
+		background: #333
+
 .case-main-slide-two
 	width: 740rem
-	transform: scale(1)
-	margin-left: 170rem
+	transform: scale(0.72)
+	transition: transform .25s
 	margin-right: 170rem
-.case-main-slide-two
-	&.is-selected
-		transform: scale(1.36)
+.case-slder-two__arrows
+	width: 995rem
+	display: flex
+	justify-content: space-between
+	position: absolute
+	left: 50%
+	margin-left: -497rem
+	cursor: pointer
+	top: 50%
+	& svg
+		width: 20rem
+		height: 35rem
+.case-slider-progress-wrap
+	display: flex
+	width: 680rem
+	justify-content: space-between
+	margin-left: auto
+	margin-right: auto
+	margin-top: 110rem
+	align-items: center
+.case-slider-two-progress
+	width: 480rem
+	background: #dedede
+	border-radius: 5rem
+	height: 10rem
+.case-slider-two-progress-bar
+	background: #26B1A0
+	border-radius: 5rem
+	height: 10rem
+	width: 0
+.case-slider__progress__current
+	font-weight: 700
+	font-size: 33rem
+.case-slider__progress__total
+	font-weight: 700
+	font-size: 33rem
