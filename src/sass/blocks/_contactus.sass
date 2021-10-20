@@ -111,6 +111,7 @@
 .contactusFile
 	display: flex
 	align-items: center
+	cursor: pointer
 	& img
 		width: 26rem
 .contactus__file
@@ -149,3 +150,8 @@
 			left: 0
 			height: 2rem
 			background: $dark_bg
+			transition: width .25s
+		&:hover
+			color: $mint
+			&:before
+				width: 0
