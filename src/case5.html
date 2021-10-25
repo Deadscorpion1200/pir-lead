@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Gulp</title>
+	<link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<div class="content">
+			@include('_header.html')
+			<!--@include('_clients1.html')-->
+			<!--@include('_contactus1.html')-->
+			@include('_case-main.html')
+			@include('_case-descr.html')
+			<!--@include('_case-slider1.html')-->
+			@include('_case-photos.html')
+			@include('_case-next.html')
+		</div>
+		@include('_footer.html')
+	</div>
+	<!-- Вызов спрайта -->
+	<!--<svg>
+		<use xlink:href="img/sprite.svg#safe"></use>
+	</svg>-->
+	<script src="scripts/jquery.js"></script>
+	<script src="scripts/rem.js"></script>
+	<script src="scripts/fkickity.js"></script>
+	<script src="scripts/scripts.js"></script>
+</body>
+
+</html>

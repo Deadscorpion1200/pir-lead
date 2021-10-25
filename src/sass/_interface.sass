@@ -12,8 +12,20 @@ body
 	overflow-x: hidden
 section
 	width: 100%
+	@media only screen and (max-width: 650px)
+		overflow-x: hidden
 input, button
 	outline: none
+.mobile-hidden
+	display: flex
+	@media only screen and (max-width: 650px)
+		display: none !important
+.desktop-hidden
+	display: none !important
+	@media only screen and (max-width: 650px)
+		display: flex !important
+.hidden
+	display: none
 .strong
 	font-weight: 700
 .desktop-hidden
@@ -43,6 +55,7 @@ a
 	font-family: "PTRootUI", sans-serif
 	font-weight: 500
 	font-size: 22rem
+	color: #000
 .button--o
 	background: transparent
 	transition: background .25s, border .25s
@@ -75,5 +88,88 @@ a
 	letter-spacing: 2rem
 .input-small
 	width: 350rem
+	@media only screen and (max-width: 650px)
+		width: 100%
 .input-large
 	width: 100%
+	@media only screen and (max-width: 650px)
+		width: 100%
+.row
+	display: flex
+	justify-content: flex-start
+	margin-bottom: 40rem
+.col-4
+	flex-basis: 40%
+	margin-right: 40rem
+	& img
+		object-fit: cover
+		height: 100%
+	&:last-child
+		margin-right: 0
+.col-6
+	flex-basis: 50%
+	margin-right: 40rem
+	& img
+		object-fit: cover
+		height: 100%
+	&:last-child
+		margin-right: 0
+.col-8
+	flex-basis: 80%
+	margin-right: 40rem
+	& img
+		object-fit: cover
+		height: 100%
+	&:last-child
+		margin-right: 0
+.mobile__menu
+	position: absolute
+	left: 0
+	top: 0rem
+	height: 100vh
+	background: #313131
+	width: 100%
+	z-index: -1
+	opacity: 0
+	visibility: hidden
+	transition: opacity .25s, visibility .25s
+	padding-top: 85rem
+	& .footer__socials
+		justify-content: center
+	& .footer__link
+		width: 100%
+	& .footer-block
+		text-align: center
+.mobile__menu--active
+	opacity: 1
+	visibility: visible
+.mobile__navigation
+	margin-top: 0
+	margin-bottom: 0
+	display: flex
+	flex-direction: column
+	list-style: none
+	padding-left: 0
+	margin-left: auto
+	margin-right: auto
+	text-align: center
+	& li
+		display: flex
+		justify-content: center
+		margin-bottom: 20rem
+		font-size: 18rem
+		&:last-child
+			margin-bottom: 18rem
+		& a
+			width: 100%
+.mobile-button__callback
+	width: 280rem
+	border: 1rem solid #17C5B1
+	height: 41rem
+	display: flex
+	justify-content: center
+	align-items: center
+	margin-left: auto
+	margin-right: auto
+	font-size: 18rem
+	margin-bottom: 40rem

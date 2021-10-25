@@ -16,6 +16,7 @@
 		font-size: 27rem
 	& span
 		position: relative
+		font-weight: 900
 		&:before
 			content: ''
 			position: absolute
@@ -38,6 +39,8 @@
 			border-radius: 50%
 			background: linear-gradient(180deg, rgba(38, 177, 160, 0.2) 0%, rgba(47, 212, 199, 0.2) 100%)
 			filter: blur(200rem)
+			@media only screen and (max-width: 650px)
+				display: none
 .cases__list
 	list-style: none
 	margin-top: 0
@@ -93,13 +96,17 @@
 			display: none
 .case__img
 	margin-bottom: 30rem
+	@media only screen and (max-width: 650px)
+		margin-bottom: 20rem
 .case__tags
 	display: flex
 	margin-bottom: 50rem
 	flex-wrap: wrap
+
 	& span
 		margin-right: 35rem
 		@media only screen and (max-width: 650px)
+			font-size: 12rem
 			margin-right: 20rem
 .case__logo
 	width: 297rem

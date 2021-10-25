@@ -51,6 +51,7 @@
 	@media only screen and (max-width: 650px)
 		flex-direction: column-reverse
 		align-items: center
+		padding-top: 30rem
 .reviews__block
 	position: relative
 	&:first-child
@@ -64,6 +65,7 @@
 		width: 650rem
 		@media only screen and (max-width: 650px)
 			width: 184rem
+			height: 241rem
 .reviews__description
 	position: relative
 	font-size: 20rem
@@ -73,6 +75,10 @@
 		margin-bottom: 25rem
 		&:last-child
 			margin-bottom: 0
+	@media only screen and (max-width: 650px)
+		font-size: 12rem
+		& p
+			margin-bottom: 20rem
 .reviews-person
 	margin-top: 49rem
 	text-align: right
@@ -80,21 +86,38 @@
 	& span
 		display: block
 		font-style: italic
+	@media only screen and (max-width: 650px)
+		margin-top: 15rem
+		font-size: 12rem
 .reviews-person__name
 	font-weight: 600
 	font-size: 20rem
+	@media only screen and (max-width: 650px)
+		font-size: 12rem
 .reviews__quote
 	position: absolute
 	top: -25rem
 	left: -89rem
 	& svg
 		width: 70rem
+	@media only screen and (max-width: 650px)
+		top: 0
+		left: 0
+		& svg
+			width: 27rem
 .reviews__logo
 	//position: absolute
 	width: 250rem
 	height: 140rem
 	& img
 		width: 100%
+	@media only screen and (max-width: 650px)
+		width: 97rem
+		height: 37rem
+		margin-right: auto
+		margin-left: auto
+		margin-top: 25rem
+		margin-bottom: 22rem
 .reviews__nav
 	width: 1510rem
 	display: flex
@@ -104,6 +127,8 @@
 	margin-top: 65rem
 	@media only screen and (max-width: 650px)
 		width: 280rem
+		margin-top: 0
+		top: 360rem
 .reviews__nav--prev
 	width: 65rem
 	height: 54rem
@@ -115,6 +140,11 @@
 	align-items: center
 	& svg
 		width: 25rem
+	@media only screen and (max-width: 650px)
+		width: 36rem
+		height: 29rem
+		& svg
+			width: 13rem
 .reviews__nav--next
 	width: 65rem
 	height: 54rem
@@ -126,3 +156,8 @@
 	align-items: center
 	& svg
 		width: 25rem
+	@media only screen and (max-width: 650px)
+		width: 36rem
+		height: 29rem
+		& svg
+			width: 13rem

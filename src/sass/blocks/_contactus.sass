@@ -1,8 +1,13 @@
 .contactus
 	padding-top: 350rem
 	padding-bottom: 200rem
+	@media only screen and (max-width: 650px)
+		padding-top: 70rem
+		padding-bottom: 70rem
 .contactus-page
 	padding-top: 200rem
+	@media only screen and (max-width: 650px)
+		padding-top: 0
 .contactus__title
 	font-size: 60rem
 	font-family: "Montserrat",sans-serif
@@ -11,6 +16,9 @@
 	text-transform: uppercase
 	position: relative
 	margin-bottom: 100rem
+	@media only screen and (max-width: 650px)
+		font-size: 27rem
+		margin-bottom: 50rem
 	& span
 		position: relative
 		&:before
@@ -21,6 +29,10 @@
 			top: -150rem
 			left: 50%
 			background: $dark_bg
+			@media only screen and (max-width: 650px)
+				height: 50rem
+				top: -70rem
+				left: 65rem
 		&:after
 			content: ''
 			position: absolute
@@ -31,9 +43,13 @@
 			border-radius: 50%
 			background: linear-gradient(180deg, rgba(38, 177, 160, 0.2) 0%, rgba(47, 212, 199, 0.2) 100%)
 			filter: blur(200rem)
+			@media only screen and (max-width: 650px)
+				display: none
 .contactus__wrapper
 	display: flex
 	justify-content: space-between
+	@media only screen and (max-width: 650px)
+		flex-wrap: wrap
 .contactus-form
 	position: relative
 	&:before
@@ -52,6 +68,10 @@
 	margin-bottom: 80rem
 	font-family: "Montserrat", sans-serif
 	text-transform: uppercase
+	@media only screen and (max-width: 650px)
+		text-align: left
+		font-size: 18rem
+		margin-bottom: 30rem
 .contactus-contacts
 	width: 490rem
 	font-size: 27rem
@@ -65,10 +85,15 @@
 		top: 0
 		line-height: 0.8
 		left: -133rem
+	@media only screen and (max-width: 650px)
+		width: 100%
+		font-size: 15rem
 .contactus__form
 	width: 738rem
 	position: relative
-
+	@media only screen and (max-width: 650px)
+		width: 100%
+		flex-wrap: wrap
 .contactus__line
 	display: flex
 	margin-bottom: 70rem
@@ -76,6 +101,11 @@
 	align-items: center
 	&:nth-child(4)
 		margin-bottom: 20rem
+	@media only screen and (max-width: 650px)
+		flex-wrap: wrap
+		margin-bottom: 0
+		&:nth-child(4)
+			margin-bottom: 14rem
 .contactus__input
 	border: none
 	border-bottom: 1rem solid $dark_bg
@@ -86,6 +116,9 @@
 	&:focus
 		transition: border-bottom .25s
 		border-bottom: 2rem solid $mint
+	@media only screen and (max-width: 650px)
+		margin-bottom: 30rem
+		padding-bottom: 4rem
 .contactus__button
 	width: 308rem
 	height: 59rem
@@ -108,28 +141,51 @@
 		color: #fff
 		& svg line
 			stroke: #fff
+	@media only screen and (max-width: 650px)
+		width: 180rem
+		font-size: 16rem
+		padding: 10rem 25rem
+		height: auto
+		& svg
+			width: 37rem
 .contactusFile
 	display: flex
 	align-items: center
 	cursor: pointer
 	& img
 		width: 26rem
+	@media only screen and (max-width: 650px)
+		align-items: start
+		width: 75rem
+		& img
+			width: 17rem
 .contactus__file
 	display: none
 .contactusFile__name
 	font-family: "PTRootUI"
 	color: #161616
 	margin-left: 7rem
+	@media only screen and (max-width: 650px)
+		font-size: 11rem
 .contactus__refference
 	width: 488rem
 	color: #9A9A9A
+	@media only screen and (max-width: 650px)
+		font-size: 11rem
+		width: 100%
+		margin-bottom: 40rem
 .contactus-info
 	margin-top: 80rem
+	@media only screen and (max-width: 650px)
+		margin-top: 40rem
 .contactus-info__list
 	padding-left: 0
 	list-style: none
 	font-family: "PTRootUI"
 	font-weight: 400
+	@media only screen and (max-width: 650px)
+		margin-top: 15rem
+		margin-bottom: 0
 .contactus-info__item
 	margin-bottom: 10rem
 	&:last-child
@@ -138,7 +194,6 @@
 		transition: color .25s
 		&:hover
 			color: $mint
-
 .link
 	& a
 		position: relative
@@ -155,3 +210,6 @@
 			color: $mint
 			&:before
 				width: 0
+.contactus-info__title
+	@media only screen and (max-width: 650px)
+		font-size: 20rem

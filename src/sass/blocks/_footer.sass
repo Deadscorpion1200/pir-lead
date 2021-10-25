@@ -2,18 +2,31 @@
 	background: $dark_bg
 	padding-top: 60rem
 	padding-bottom: 60rem
+	@media only screen and (max-width: 650px)
+		padding-top: 44rem
+		padding-bottom: 40rem
 .footer__logo
 	width: 166rem
 	height: 55rem
+	@media only screen and (max-width: 650px)
+		width: 109rem
+		height: 35rem
 .footer__wrapper
 	display: flex
 	justify-content: space-between
 	align-items: center
 	margin-bottom: 46rem
+	@media only screen and (max-width: 650px)
+		flex-direction: row-reverse
+		align-items: start
+		margin-bottom: 20rem
 .footer__socials
 	display: flex
 	padding-left: 0
 	list-style: none
+	@media only screen and (max-width: 650px)
+		margin-top: 0
+		margin-bottom: 15rem
 .footer__social
 	&:first-child
 		margin-right: 25rem
@@ -54,14 +67,40 @@
 		&:hover
 			& svg
 				fill: $mint
+	@media only screen and (max-width: 650px)
+	&:first-child
+		margin-right: 17rem
+		svg
+			width: 17rem
+			height: 17rem
+	&:nth-child(2)
+		margin-right: 17rem
+		svg
+			width: 19rem
+			height: 17rem
+	&:nth-child(3)
+		margin-right: 17rem
+		svg
+			width: 10rem
+			height: 17rem
+	&:last-child
+		svg
+			width: 18rem
+			height: 18rem
 .footer__info
 	display: flex
 	color: #fff
+	@media only screen and (max-width: 650px)
+		flex-direction: column-reverse
+		margin-right: auto
 .footer__copyright
 	margin-right: 80rem
+	font-size: 15rem
 .footer__contacts
 	display: flex
 	flex-direction: column
+	@media only screen and (max-width: 650px)
+		font-size: 15rem
 .footer__line
 	&:nth-child(2)
 		.footer__wrapper
@@ -76,9 +115,14 @@
 		margin-bottom: 0
 	&:hover
 		color: $mint
+	@media only screen and (max-width: 650px)
+		text-align: left
+		&:first-child
+			margin-bottom: 5rem
 .footer__policy
 	position: relative
 	transition: color .25s
+	margin-bottom: 13rem
 	&::before
 		content: ''
 		position: absolute
@@ -91,3 +135,7 @@
 		color: $mint
 		&:before
 			width: 0
+	@media only screen and (max-width: 650px)
+		font-size: 15rem
+		&:before
+			height: 0.5rem

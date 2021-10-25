@@ -1,5 +1,7 @@
 .command
 	padding-top: 220rem
+	@media only screen and (max-width: 650px)
+		padding-top: 85rem
 .command__title
 	font-size: 60rem
 	font-family: "Montserrat", sans-serif
@@ -7,6 +9,8 @@
 	font-weight: 900
 	text-align: center
 	margin-bottom: 100rem
+	@media only screen and (max-width: 650px)
+		font-size: 27rem
 	&:before
 		content: ''
 		width: 2rem
@@ -15,6 +19,9 @@
 		background: $dark_bg
 		left: 50%
 		top: -150rem
+		@media only screen and (max-width: 650px)
+			top: -70rem
+			height: 50rem
 	& span
 		position: relative
 		&:before
@@ -27,6 +34,8 @@
 			border-radius: 50%
 			filter: blur(200rem)
 			background: linear-gradient(180deg, rgba(38, 177, 160, 0.2) 0%, rgba(47, 212, 199, 0.2) 100%)
+			@media only screen and (max-width: 650px)
+				display: none
 .command__wrapper
 	display: flex
 	flex-wrap: wrap

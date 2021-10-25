@@ -122,6 +122,38 @@ if(document.querySelector('.case-main-slider-two')){
 	total.textContent('.case-slider__progressTotal')
 
 }
+
+if(document.querySelector('.case-main-slider-three')){
+	var flick2 = new Flickity('.case-main-slider-three',{
+		wrapAround: 'true', 
+		cellAlign: 'left',
+		fade: true,
+		contain: true,
+		pageDots: false,
+		prevNextButtons: false,
+	})
+	$('.case-slider-three-arrow__prev').on('click',()=>{
+		flick2.previous();
+	});
+	$('.case-slider-three-arrow__next').on('click',()=>{
+		flick2.next();
+	});
+}
+if(document.querySelector('.case-slider-main-four__slider')){
+	var flick3 = new Flickity('.case-slider-main-four__slider',{
+		cellAlign: 'left',
+		fade: true,
+		contain: true,
+		pageDots: false,
+		prevNextButtons: false
+	})
+	$('.case-slider-main-four__prev').on('click', ()=>{
+		flick3.previous();
+	});
+	$('.case-slider-main-four__next').on('click', ()=>{
+		flick3.next();
+	})
+}
 if(document.querySelector('.contactus__file')){
 	let fileInput = document.querySelector('#contactusFile');
 	fileInput.addEventListener('change',()=>{
@@ -132,4 +164,12 @@ if(document.querySelector('.contactus__file')){
 		value.innerHTML = file;
 	});
 	
+}
+if(document.querySelector('.header-mobile')){
+	let menu = document.querySelector('.header-mobile')
+	let mobile = document.querySelector('.mobile__menu')
+	menu.addEventListener('click',()=>{
+		menu.classList.toggle('header-mobile--active')
+		mobile.classList.toggle('mobile__menu--active')
+	});
 }
